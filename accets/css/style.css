@@ -1,0 +1,376 @@
+/* Общие настройки ↓↓ */
+*{
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    cursor: default;
+    box-sizing: border-box;
+    font-family: 'Urbanist-med';
+    font-size: 18px;
+    color: #333333;
+}
+
+body{
+    background-color: #FAFDF2;
+}
+
+.aktiv{
+    color: #CBEA7B;
+}
+
+.cont{
+    width: 1596px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 48px;
+    font-family: 'Urbanist-bold';
+    margin-bottom: 10px;
+    text-align: center;
+    color: #262626;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url(../Urbanist/Urbanist-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Urbanist-med';
+    src: url(../Urbanist/Urbanist-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Urbanist-semibold';
+    src: url(../Urbanist/Urbanist-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Urbanist-bold';
+    src: url(../Urbanist/Urbanist-Bold.ttf);
+}
+
+/* Общие настройки ↑↑ */
+
+
+/* Header ↓↓ */
+header{
+    background-color: #1A3129;
+    padding: 20px 0;
+}
+
+header .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header nav{
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    opacity: 0;
+    background-color: #656959;
+    width: 100px;
+    padding: 10px 20px;
+    transition: .5s;
+}
+
+header nav a{
+    color: #FAFDF2;
+}
+
+header nav a:hover{
+    transition: .5s;
+    color: #CBEA7B;
+}
+
+header button{
+    padding: 5px 10px;
+    background-color: #CBEA7B;
+    width: 100px;
+}
+
+/* Header ↑↑ */
+
+
+/* slider ↓↓ */
+.slider{
+    margin: 200px 0 187px;
+}
+
+.slider p{
+    text-align: center;
+}
+
+.slider .p1{
+    margin-top: 80px;
+    padding: 40px 0 40px;
+    border: 1px solid #EEF8D3;
+    border-radius: 12px 12px 0 0;
+}
+
+.slider .block{
+    background-color: #F6FBE9;
+    padding: 30px 40px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 50px;
+    border: 1px solid #EEF8D3;
+    border-radius: 0 0 12px 12px;
+}
+
+.slider .block img{
+    width: 60px;
+}
+
+.slider .block p{
+    font-family: 'Urbanist-semibold';
+    color: #1A3129;
+}
+
+.slider .box{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .box .ellips{
+    display: flex;
+    gap: 4PX;
+}
+
+.slider .box .el{
+    width: 8px;
+    height: 8px;
+    border-radius: 20px;
+    background-color: #E5F5BD;
+}
+
+.slider .box .el1{
+    background-color: #356554;
+}
+
+.slider .box .el2{
+    background-color: #E5F5BD;
+}
+
+.slider .box img{
+    padding: 20px 24px;
+    background-color: #F6FBE9;
+    border-radius: 8px;
+    border: 1px solid #EEF8D3
+}
+
+.slider_line{
+    display: flex;
+    width: 4788px;
+    transition: all ease 1s;
+    position: relative;
+    left: 0;
+}
+
+.slider1{
+    width: 1596px;
+    overflow: hidden;
+}
+
+.block1{
+    min-width: 1596px;
+}
+/* slider ↑↑ */
+
+
+/* price ↓↓ */
+.price .p1{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.price .box{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #EEF8D3;
+    margin-bottom: 14px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 233px;
+}
+
+.price .box .p2{
+    font-family: 'Urbanist-semibold';
+    padding: 10px 24px;
+    background-color: #234338;
+    color: white;
+    border-radius: 6px;
+}
+
+.price .box .p3{
+    font-family: 'Urbanist-semibold';
+    padding: 10px 24px;
+}
+
+.price .p4{
+    text-align: center;
+    color: #4C4C4D;
+}
+
+.price .blocks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.active{
+    display: none  !important;
+}
+
+.price .blocks .block{
+    padding: 50px;
+    background-color: #F6FBE9;
+    border: 1px solid #EEF8D3;
+    border-radius: 12px;
+}
+
+.price .blocks .block .p5{
+    font-family: 'Urbanist-semibold';
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+.price .blocks .block .p6{
+    color: #4C4C4D;
+    margin-bottom: 40px;
+}
+
+.price .blocks .block .price{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 40px 0 33px;
+}
+
+.price .blocks .block .price .p7{
+    font-size: 50px;
+    font-family: 'Urbanist-bold';
+    color: #2C5446;
+}
+
+.price .blocks .block button{
+    background-color: #CBEA7B;
+    border-radius: 8px;
+    width: 412px;
+    height: 58px;
+    font-family: 'Urbanist-semibold';
+}
+/* price ↑↑ */
+
+
+/* FAQ ↓↓ */
+.faq {
+    padding-top: 200px;
+    position: relative;
+    padding-bottom: 140px;
+}
+
+.faq-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align:center;
+    margin-bottom: 25px;
+}
+
+.faq-descr {
+    font-size: 18px;
+    font-weight: 500;
+    text-align:center;
+}
+
+.faq-link {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    color: rgba(203, 234, 123, 1);
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0;
+    transition: .8s ease-in-out;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.accard-content {
+    padding: 60px;
+    width: 100%;
+    width: 1700px;
+}
+
+.accard-container {
+    width: 100%;
+}
+
+.accard-block {
+    border-bottom: 1px solid rgba(229, 245, 189, 1);
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.accard-image {
+    width: 48px;
+}
+
+.accard-text {
+    max-width: 1300px;
+}
+
+.accard-question {
+    font-size: 20px;
+    font-weight: 600px;
+    color: rgba(38, 38, 38, 1);
+    text-align: left;
+}
+
+.accard-otvet {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+    text-align: left;
+    display: none;
+    margin-top: 25px;
+}
+
+.accard-otvet--active {
+    display: block;
+}
+/* FAQ ↑↑ */
+
+
+/* телефон ↓↓ */
+.phone {
+    display: none;
+    position: fixed;
+    top: 90%;
+    right: 40px;
+    padding: 10px;
+    color: #CBEA7B;
+    border: #234338 solid 1px;
+    border-radius: 10px;
+    animation: anim 1s;
+    background-color: white;
+}
+/* телефон ↑↑ */

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="accets/css/style.css">
+</head>
+<body>
+    <!-- Header ↓↓ -->
+    <header>
+        <div class="cont">
+            <img src="accets/media/logo/Logo.svg" alt="">
+            <div class="menu" id="menu">
+                <button class="menu_btn">Menu</button>
+                <nav class="menu1" id="menu1">
+                    <a href="">Home</a><br>
+                    <a  href="">About</a><br>
+                    <a href="">Team</a><br>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        let items = document.getElementById('menu1');
+        menu.addEventListener('mouseover', function () {
+            items.style.opacity = '1';
+        });
+        menu.addEventListener('mouseout', function () {
+            items.style.opacity = '0';
+        });
+    </script>
+    <!-- Header ↑↑ -->
+
+
+    <!-- slider ↓↓ -->
+    <section class="slider">
+        <div class="cont">
+            <h1>Our Testimonials</h1>
+            <p>Our satisfied clients share their success stories and experiences on their journey to better health and well-being.</p>
+            <div class="slider1">
+                <div class="slider_line" id="slider_line1">
+                    <div class="block1">
+                        <p class="p1">I can't thank Nutritionist enough for their personalized nutrition coaching. It has completely transformed my approach
+                            to food and helped me shed those extra pounds. Highly recommended!</p>
+                       
+                       <div class="block">
+                           <img src="accets/media/slider/Image.png" alt="">
+                           <p>Jennifer Anderson</p>
+                       </div>
+                    </div>
+
+                    <div class="block1">
+                        <p class="p1">I can't thank Nutritionist enough for their personalized nutrition coaching. It has completely transformed my approach
+                            to food and helped me shed those extra pounds. Highly recommended!</p>
+                       
+                       <div class="block">
+                           <img src="accets/media/slider/Image.png" alt="">
+                           <p>Jennifer Anderson2</p>
+                       </div>
+                    </div>
+
+                    <div class="block1">
+                        <p class="p1">I can't thank Nutritionist enough for their personalized nutrition coaching. It has completely transformed my approach
+                            to food and helped me shed those extra pounds. Highly recommended!</p>
+                       
+                       <div class="block">
+                           <img src="accets/media/slider/Image.png" alt="">
+                           <p>Jennifer Anderson2</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img class="l" src="accets/media/slider/arrowl.svg" alt="">
+                <div class="ellips">
+                    <div class="el el1 e1"></div>
+                    <div class="el el1 e2"></div>
+                    <div class="el el1 e3"></div>
+                </div>
+
+                <img class="r" src="accets/media/slider/arrowr.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // const slider_line1 = document.querySelector('.slider-line');
+        const slider_line1 = document.getElementById("slider_line1");
+        let offset = 0;
+
+        document.querySelector('.r').addEventListener('click', function(){
+            offset = offset +1596;
+
+            if(offset>3192){
+                offset = 0
+            }
+
+            slider_line1.style.left = -offset + "px";
+
+        })
+
+        document.querySelector('.l').addEventListener('click', function(){
+            offset = offset -1596;
+
+            if(offset < 0){
+                offset = 3192;
+            }
+
+            slider_line1.style.left = -offset + 'px';
+        })
+
+        document.querySelector('.e1').addEventListener('click', function(){
+            offset = 0;
+
+            slider_line1.style.left = -offset + 'px';
+        })
+
+        document.querySelector('.e2').addEventListener('click', function(){
+            offset = 1596;
+
+            slider_line1.style.left = -offset + 'px';
+        })
+
+        document.querySelector('.e3').addEventListener('click', function(){
+            offset = 3192;
+
+            slider_line1.style.left = -offset + 'px';
+        })
+    </script>
+
+
+    <!-- slider ↑↑ -->
+
+
+
+    <!-- price ↓↓ -->
+    <section class="price">
+        <div class="cont">
+            <h1>Our Pricing</h1>
+            <p class="p1">We outline our flexible and affordable options to support you on your journey to optimal health and nutrition. We believe that <br>
+                everyone deserves access to personalized nutrition guidance and resources</p>
+            
+            <div class="box">
+                <p class="p2 btttn">Yearly</p>
+                <p class="p3 btttn">Monthly</p>
+            </div>
+            <p class="p4">Save 50% on Yearly</p>
+
+            <div class="blocks blocck active">
+                <div class="block">
+                    <p class="p5">Basic Plan</p>
+                    <p class="p6">Up to 50% off on Yearly Plan</p>
+                    <p>Get started on your health journey with our Basic <br>
+                        Plan. It includes personalized nutrition coaching, <br>
+                        access to our app, meal planning assistance, and <br>
+                        email support.</p>
+                    
+                    <div class="price">
+                        <p class="p7">$1149</p>
+                        <p>/month</p>
+                    </div>
+
+                    <button>Choose Plan</button>
+                </div>
+
+                <div class="block">
+                    <p class="p5">Premium Plan</p>
+                    <p class="p6">Up to 50% off on Yearly Plan</p>
+                    <p>Upgrade to our Premium Plan for enhanced <br>
+                        features. In addition to the Basic Plan, you'll receive  <br>
+                        video consultations, priority support, and  <br>
+                        personalized recipe recommendations.</p>
+                    
+                    <div class="price">
+                        <p class="p7">$1179</p>
+                        <p>/month</p>
+                    </div>
+
+                    <button>Choose Plan</button>
+                </div>
+
+                <div class="block">
+                    <p class="p5">Ultimate Plan</p>
+                    <p class="p6">Up to 50% off on Yearly Plan</p>
+                    <p>Experience the full benefits of personalized nutrition <br>
+                        coaching with our Ultimate Plan. Enjoy all the <br>
+                        features of the Premium Plan, along with 24/7 chat <br>
+                        support and exclusive workshops.</p>
+                    
+                    <div class="price">
+                        <p class="p7">$1199</p>
+                        <p>/month</p>
+                    </div>
+
+                    <button>Choose Plan</button>
+                </div>
+            </div>
+
+
+            <div class="blocks blocck">
+                <div class="block">
+                    <p class="p5">Basic Plan</p>
+                    <p class="p6">Up to 50% off on Yearly Plan</p>
+                    <p>Get started on your health journey with our Basic <br>
+                        Plan. It includes personalized nutrition coaching, <br>
+                        access to our app, meal planning assistance, and <br>
+                        email support.</p>
+                    
+                    <div class="price">
+                        <p class="p7">$49</p>
+                        <p>/month</p>
+                    </div>
+
+                    <button>Choose Plan</button>
+                </div>
+
+                <div class="block">
+                    <p class="p5">Premium Plan</p>
+                    <p class="p6">Up to 50% off on Yearly Plan</p>
+                    <p>Upgrade to our Premium Plan for enhanced <br>
+                        features. In addition to the Basic Plan, you'll receive  <br>
+                        video consultations, priority support, and  <br>
+                        personalized recipe recommendations.</p>
+                    
+                    <div class="price">
+                        <p class="p7">$79</p>
+                        <p>/month</p>
+                    </div>
+
+                    <button>Choose Plan</button>
+                </div>
+
+                <div class="block">
+                    <p class="p5">Ultimate Plan</p>
+                    <p class="p6">Up to 50% off on Yearly Plan</p>
+                    <p>Experience the full benefits of personalized nutrition <br>
+                        coaching with our Ultimate Plan. Enjoy all the <br>
+                        features of the Premium Plan, along with 24/7 chat <br>
+                        support and exclusive workshops.</p>
+                    
+                    <div class="price">
+                        <p class="p7">$99</p>
+                        <p>/month</p>
+                    </div>
+
+                    <button>Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- price ↑↑ -->
+
+
+    <!-- FAQ ↓↓ -->
+    <section class="faq" id="faq">
+        <a href="" class="faq-link">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5C1.5 3.34315 2.84315 2 4.5 2H5.87163C6.732 2 7.48197 2.58556 7.69064 3.42025L8.79644 7.84343C8.97941 8.5753 8.70594 9.34555 8.10242 9.79818L6.8088 10.7684C6.67447 10.8691 6.64527 11.0167 6.683 11.1197C7.81851 14.2195 10.2805 16.6815 13.3803 17.817C13.4833 17.8547 13.6309 17.8255 13.7316 17.6912L14.7018 16.3976C15.1545 15.7941 15.9247 15.5206 16.6566 15.7036L21.0798 16.8094C21.9144 17.018 22.5 17.768 22.5 18.6284V20C22.5 21.6569 21.1569 23 19.5 23H17.25C8.55151 23 1.5 15.9485 1.5 7.25V5Z" fill="#CBEA7B"/>
+            </svg>
+            +7(967)-(124)-76-87</a>
+        <div class="faq-container">
+            <h2 class="faq-title">
+                FAQ
+            </h2>
+            <div class="faq-descr">
+                We address commonly asked questions and provide comprehensive answers to help you navigate your way through your nutrition and wellness journey.
+            </div>
+        </div>
+    </section>
+        <section class="accard" id="accard">
+            <div class="container accard-container">
+                <div class="accard-content">
+                    <button class="accard-block" onclick="click1()">
+                        <div class="accard-text">
+                            <div class="accard-question">
+                                What is personalized nutrition coaching?
+                            </div>
+                            <div class="accard-otvet" id="otvet1">
+                                Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements. Our team of experts will work closely with you to develop a plan that fits your lifestyle and helps you achieve optimal health and wellness.
+                            </div>
+                        </div>
+                        <img src="assets/media/faq/Icon.svg" alt="" class="accard-image">
+                    </button>
+                    <button class="accard-block" onclick="click2()">
+                        <div class="accard-text">
+                            <div class="accard-question">
+                                How can nutrition coaching help me lose weight?
+                            </div>
+                            <div class="accard-otvet" id="otvet2">
+                                Thus, the advantage of psychotherapy as an effective way to lose weight is to solve the problem of excess weight not only at the level of the stomach and body, but also at the level of consciousness, subconsciousness and unconsciousness, which in fact and control the metabolic processes, the processes of saturation and recovery of the body.                        </div>
+                        </div>
+                        <img src="assets/media/Icon.svg" alt="" class="accard-image">
+                    </button>
+                    <button class="accard-block" onclick="click3()">
+                        <div class="accard-text">
+                            <div class="accard-question">
+                                Can I still enjoy my favorite foods while on a nutrition plan?
+                            </div>
+                            <div class="accard-otvet" id="otvet3">
+                                Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements. Our team of experts will work closely with you to develop a plan that fits your lifestyle and helps you achieve optimal health and wellness.
+                            </div>
+                        </div>
+                        <img src="assets/media/Icon.svg" alt="" class="accard-image">
+                    </button>
+                </div>
+            </div>
+        </section>
+       
+
+
+    <script>
+        let click = 0;
+let clicks = 0;
+let clickt = 0;
+
+function click1(){
+    if(click == 0) {
+        document.getElementById('otvet1').classList.add('accard-otvet--active');
+        click++;
+    }
+    else if (click == 1) {
+        document.getElementById('otvet1').classList.remove('accard-otvet--active');
+        click--;
+    }
+}
+function click2(){
+    if(clicks == 0) {
+        document.getElementById('otvet2').classList.add('accard-otvet--active');
+        clicks++;
+    }
+    else if (clicks == 1) {
+        document.getElementById('otvet2').classList.remove('accard-otvet--active');
+        clicks--;
+    }
+}
+function click3(){
+    if(clickt == 0) {
+        document.getElementById('otvet3').classList.add('accard-otvet--active');
+        clickt++;
+    }
+    else if (clickt == 1) {
+        document.getElementById('otvet3').classList.remove('accard-otvet--active');
+        clickt--;
+    }
+}
+    </script>
+    <!-- FAQ ↑↑ -->
+
+
+
+
+
+
+<!-- телефон ↓↓ -->
+    <p class="phone">📞 +7(967)-(124)-76-87</p>
+<!-- телефон ↑↑ -->
+
+
+<script>
+    const phone = document.querySelector('.phone');
+
+    let observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            phone.style.display = 'block';
+        }
+    }, { threshold: 0.5 });
+
+    const faq = document.getElementById('faq');
+    observer.observe(faq);
+    </script>
+
+
+<!-- вкладки ↓↓ -->
+    <script>
+        const Knopki = document.querySelectorAll('.btttn');
+        const texts = document.querySelectorAll('.blocck');
+
+        Knopki.forEach((item, index) => {
+            item.addEventListener('click', function () {
+                document.querySelector('.blocck.active').classList.remove('active');
+                texts[index].classList.add('active');
+            })
+        })
+    </script>
+<!-- вкладки ↑↑ -->
+
+
+
+</body>
+</html>
